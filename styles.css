@@ -1,0 +1,177 @@
+/* ========================================
+   OMVI Health Design System
+======================================== */
+
+:root {
+    --color-primary: #1A1F35;
+    --color-secondary: #C99240;
+    --color-bg: #C99240;
+    --color-text: #FFFFFF;
+    --color-nav-bg: #1A1F35;
+    --color-cta: #C99240;
+    --color-accent: #FFFFFF;
+
+    --font-heading: "Barlow", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-2xl: 48px;
+    --space-3xl: 64px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+header,
+.site-header {
+    background-color: var(--color-nav-bg);
+    padding: var(--space-lg) var(--space-2xl);
+}
+
+nav ul,
+.primary-navigation ul {
+    display: flex;
+    gap: var(--space-xl);
+}
+
+nav a,
+.primary-navigation a {
+    color: var(--color-text);
+}
+
+section {
+    padding: var(--space-3xl) var(--space-2xl);
+}
+
+.hero,
+.hero-section {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.hero h1,
+.hero-section h1 {
+    color: var(--color-accent);
+}
+
+.hero a,
+.hero-section a {
+    display: inline-block;
+    align-self: flex-start;
+    background-color: var(--color-cta);
+    color: var(--color-primary);
+    padding: var(--space-md) var(--space-xl);
+    font-weight: 600;
+}
+
+.features,
+.features-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.feature-card,
+.features article {
+    background-color: var(--color-primary);
+    padding: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.feature-card h2,
+.features article h2 {
+    color: var(--color-secondary);
+}
+
+.gallery,
+.gallery-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.gallery figure,
+.gallery-section figure {
+    background-color: var(--color-primary);
+    padding: var(--space-md);
+}
+
+footer,
+.site-footer {
+    background-color: var(--color-primary);
+    padding: var(--space-2xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.footer-navigation ul {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.social-media-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.social-media-section ul {
+    display: flex;
+    gap: var(--space-lg);
+}
