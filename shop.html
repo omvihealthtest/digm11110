@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — OMVI Health</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="nav.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+<a href="index.html" class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></a>
+<nav class="primary-navigation">
+<ul>
+<li><a href="shop.html" aria-current="page">Shop</a></li>
+<li><a href="app.html">App</a></li>
+<li><a href="ourstory.html">Our Story</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+<a href="#cart" class="cart-icon" aria-label="View cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1.2"/><circle cx="18" cy="21" r="1.2"/><path d="M2.5 3h2l2.2 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H5.3"/></svg>
+</a>
+</div>
+</header>
+
+<main>
+
+<section class="hero-section" style="grid-template-columns:1fr;">
+<div class="page-intro">
+<h1>The OMVI Health System</h1>
+<p>Three ways to know your body better — a body composition scale, a smart nutrition scale, and the complete system that connects them both to the OMVI app.</p>
+</div>
+</section>
+
+<section class="sku-section">
+<div class="sku-grid">
+
+<article class="sku-card">
+<span class="sku-badge">Body Composition</span>
+<img src="images/omvi-body-scale-product-front-01.jpg" alt="OMVI Body Composition Scale">
+<h3>OMVI Body Composition Scale</h3>
+<p>Weight, body fat, skeletal muscle and 50+ body metrics in one weigh-in.</p>
+<div class="sku-price">
+<span class="price-now">$199.99</span>
+</div>
+<a href="bodyscale.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+<article class="sku-card sku-card-featured">
+<span class="sku-badge sku-badge-gold">Best Value</span>
+<img src="images/omvi-combo-system-front-01.png" alt="OMVI Health System — Body Composition Scale and Smart Nutrition Scale">
+<h3>OMVI Health System</h3>
+<p>Both scales together — body composition and nutrition data in one connected system.</p>
+<div class="sku-price">
+<span class="price-now">$249.99</span>
+<span class="price-was">$299.98</span>
+<span class="price-save">Save $49.99</span>
+</div>
+<a href="system.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+<article class="sku-card">
+<span class="sku-badge">Smart Nutrition</span>
+<img src="images/omvi-kitchen-scale-product-front-01.jpg" alt="OMVI Smart Nutrition Scale">
+<h3>OMVI Smart Nutrition Scale</h3>
+<p>Select your food, weigh it, and send calories and macros straight to your meal.</p>
+<div class="sku-price">
+<span class="price-now">$99.99</span>
+</div>
+<a href="nutritionscale.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+</div>
+</section>
+
+<section class="showcase-section">
+<div class="section-heading">
+<h2>One Connected System</h2>
+<p>Every OMVI device syncs to the same app, the same profile, and the same picture of your health.</p>
+</div>
+<div class="product-grid">
+<figure>
+<img src="images/omvi-body-scale-product-logo-screen-01.jpg" alt="OMVI body scale display showing logo">
+<figcaption>Ready to Weigh In</figcaption>
+</figure>
+<figure>
+<img src="images/omvi-kitchen-scale-product-logo-display-01.jpg" alt="OMVI kitchen scale display showing logo">
+<figcaption>Ready to Track</figcaption>
+</figure>
+<figure>
+<img src="images/omvi-body-scale-product-zero-screen-01.jpg" alt="OMVI body scale zeroed and ready">
+<figcaption>Zeroed &amp; Calibrated</figcaption>
+</figure>
+<figure>
+<img src="images/omvi-kitchen-scale-product-zero-display-01.jpg" alt="OMVI kitchen scale zeroed and ready">
+<figcaption>Precision to the Gram</figcaption>
+</figure>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="help">
+<div class="footer-top">
+<div class="footer-tagline">
+<h2>Know your Body.</h2>
+<p>Body Composition Insights, Food Intake. All directly to you.</p>
+</div>
+<form class="subscribe-form" action="#" method="post">
+<label for="footer-email" class="sr-only">Email address</label>
+<input id="footer-email" type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe &rarr;</button>
+</form>
+</div>
+
+<div class="footer-columns">
+<div class="footer-brand">
+<span class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></span>
+<ul class="social-links">
+<li><a href="#" aria-label="Instagram">Instagram</a></li>
+<li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+<li><a href="#" aria-label="X">X</a></li>
+</ul>
+</div>
+
+<nav class="footer-nav">
+<h3>Product</h3>
+<ul>
+<li><a href="bodyscale.html">Body Composition Scale</a></li>
+<li><a href="nutritionscale.html">Smart Nutrition Scale</a></li>
+<li><a href="system.html">OMVI Health System</a></li>
+<li><a href="app.html">OMVI App</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Company</h3>
+<ul>
+<li><a href="ourstory.html">About</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Press</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Science</h3>
+<ul>
+<li><a href="app.html">How it Works</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Accuracy</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Support</h3>
+<ul>
+<li><a href="help.html">Help Center</a></li>
+<li><a href="help.html#contact">Contact Us</a></li>
+<li><a href="help.html#warranty">Warranty</a></li>
+<li><a href="help.html#returns">Returns</a></li>
+<li><a href="help.html#certification">Certification</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 OMVI Health. All Rights Reserved.</p>
+</div>
+</footer>
+
+</body>
+</html>
