@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help &amp; Support — OMVI Health</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+<a href="index.html" class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></a>
+<nav class="primary-navigation">
+<ul>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="app.html">App</a></li>
+<li><a href="ourstory.html">Our Story</a></li>
+<li><a href="help.html" aria-current="page">Help</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+<a href="#cart" class="cart-icon" aria-label="View cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1.2"/><circle cx="18" cy="21" r="1.2"/><path d="M2.5 3h2l2.2 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H5.3"/></svg>
+</a>
+</div>
+</header>
+
+<main>
+
+<section class="hero-section" style="grid-template-columns:1fr;">
+<div class="page-intro">
+<h1>Help &amp; Support</h1>
+<p>Answers to common questions about your OMVI scales, shipping, warranty and returns.</p>
+</div>
+</section>
+
+<section class="reviews-section">
+<div class="faq-list">
+
+<article class="faq-item">
+<h3>How do I connect my scale to the app?</h3>
+<p>Open the OMVI app, create a profile, then step on the body scale or place an item on the kitchen scale with Bluetooth enabled on your phone. The scale pairs automatically the first time it detects the app nearby.</p>
+</article>
+
+<article class="faq-item">
+<h3>Do multiple people in one house need separate scales?</h3>
+<p>No. Each scale supports multiple profiles, so everyone in the household can weigh in separately and the app keeps each person's history distinct.</p>
+</article>
+
+<article class="faq-item" id="warranty">
+<h3>What's covered under warranty?</h3>
+<p>Every OMVI Body Scale and Kitchen Scale is covered by a 2-year warranty against manufacturing defects from the date of purchase. This covers faulty sensors, display issues and battery failure under normal use.</p>
+</article>
+
+<article class="faq-item" id="returns">
+<h3>What's your returns policy?</h3>
+<p>If you're not satisfied, return your OMVI product within 30 days of delivery for a full refund. Items must be in original condition with packaging. Contact us to arrange a return before sending anything back.</p>
+</article>
+
+<article class="faq-item" id="certification">
+<h3>Are OMVI devices certified?</h3>
+<p>Yes. Both the Body Scale and Kitchen Scale meet relevant electrical safety and Bluetooth certification standards for sale in Australia and New Zealand.</p>
+</article>
+
+</div>
+
+<div class="contact-card" id="contact">
+<h3>Still need a hand?</h3>
+<p>Our support team typically replies within one business day.</p>
+<a href="mailto:support@omvihealth.com" class="btn btn-primary">Email Support &rarr;</a>
+</div>
+
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-tagline">
+<h2>Know your Body.</h2>
+<p>Body Composition Insights, Food Intake. All directly to you.</p>
+</div>
+<form class="subscribe-form" action="#" method="post">
+<label for="footer-email" class="sr-only">Email address</label>
+<input id="footer-email" type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe &rarr;</button>
+</form>
+</div>
+
+<div class="footer-columns">
+<div class="footer-brand">
+<span class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></span>
+<ul class="social-links">
+<li><a href="#" aria-label="Instagram">Instagram</a></li>
+<li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+<li><a href="#" aria-label="X">X</a></li>
+</ul>
+</div>
+
+<nav class="footer-nav">
+<h3>Product</h3>
+<ul>
+<li><a href="bodyscale.html">Body Composition Scale</a></li>
+<li><a href="nutritionscale.html">Smart Nutrition Scale</a></li>
+<li><a href="system.html">OMVI Health System</a></li>
+<li><a href="app.html">OMVI App</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Company</h3>
+<ul>
+<li><a href="ourstory.html">About</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Press</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Science</h3>
+<ul>
+<li><a href="app.html">How it Works</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Accuracy</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Support</h3>
+<ul>
+<li><a href="help.html">Help Center</a></li>
+<li><a href="help.html#contact">Contact Us</a></li>
+<li><a href="help.html#warranty">Warranty</a></li>
+<li><a href="help.html#returns">Returns</a></li>
+<li><a href="help.html#certification">Certification</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 OMVI Health. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script>
+(function () {
+    var toggle = document.getElementById('nav-toggle');
+    var nav = document.querySelector('.primary-navigation');
+    if (!toggle || !nav) { return; }
+
+    toggle.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+})();
+</script>
+
+</body>
+</html>

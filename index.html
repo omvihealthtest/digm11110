@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMVI Health — Know Your Body</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+<a href="index.html" class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></a>
+<nav class="primary-navigation">
+<ul>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="app.html">App</a></li>
+<li><a href="ourstory.html">Our Story</a></li>
+<li><a href="help.html">Help</a></li>
+</ul>
+</nav>
+<div class="header-actions">
+<button type="button" class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+<span></span><span></span><span></span>
+</button>
+<a href="#cart" class="cart-icon" aria-label="View cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="21" r="1.2"/><circle cx="18" cy="21" r="1.2"/><path d="M2.5 3h2l2.2 12.2a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21 7H5.3"/></svg>
+</a>
+</div>
+</header>
+
+<main>
+
+<section class="hero-shell" id="hero-shell">
+<div class="hero-scene">
+<div class="hero-canvas" id="hero-canvas">
+
+<svg class="hero-lines" id="hero-lines">
+<defs>
+<marker id="arrow-gold" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+<path d="M0,0 L6,3 L0,6 Z" fill="#C99240"></path>
+</marker>
+</defs>
+<line id="line-body" x1="0" y1="0" x2="0" y2="0" marker-end="url(#arrow-gold)"></line>
+<line id="line-kitchen" x1="0" y1="0" x2="0" y2="0" marker-end="url(#arrow-gold)"></line>
+</svg>
+
+<div class="chaos-card cc-estimate" data-chaos>
+<span class="cc-value">1,847<small>kcal</small></span>
+<span class="cc-label">logged today</span>
+<span class="cc-note">app guess, not weighed</span>
+<span class="cc-badge">ESTIMATE</span>
+</div>
+
+<div class="chaos-card cc-steps" data-chaos>
+<span class="cc-value">8,421</span>
+<span class="cc-label">steps today</span>
+<span class="cc-note">&ne; calories burned</span>
+</div>
+
+<div class="chaos-card cc-ai" data-chaos>
+<span class="cc-eyebrow">&#10022; AI ESTIMATE</span>
+<span class="cc-value">800<small>kcal</small></span>
+<span class="cc-label">You ate dinner</span>
+<span class="cc-note">= guessed portion size</span>
+</div>
+
+<div class="chaos-card cc-sheet" data-chaos>
+<span class="cc-sheet-name">CALORIE TRACKER.XLSX</span>
+<span class="cc-row"><b>Breakfast</b> 80g <i>??</i></span>
+<span class="cc-row"><b>Lunch</b> 300g <i>~500?</i></span>
+<span class="cc-row"><b>Dinner</b> ??? <i>forgot</i></span>
+<span class="cc-total">Total: don't know</span>
+</div>
+
+<div class="chaos-card cc-question" data-chaos>
+<span class="cc-eyebrow">THE BIG QUESTION</span>
+<span class="cc-ask">Am I losing fat &mdash;<br>or am I losing muscle?</span>
+</div>
+
+<div class="chaos-card cc-question cc-question-alt" data-chaos>
+<span class="cc-eyebrow">THE BIG QUESTION</span>
+<span class="cc-ask">Is my training<br>actually working?</span>
+</div>
+
+<div class="chaos-card cc-plain" data-chaos>
+<span class="cc-ask-sm">Water or fat?</span>
+<span class="cc-note">Total weight: 77.8 kg</span>
+</div>
+
+<div class="chaos-card cc-metric" data-chaos>
+<span class="cc-eyebrow">MUSCLE MASS</span>
+<span class="cc-mark">?</span>
+</div>
+
+<div class="chaos-card cc-metric cc-metric-gold" data-chaos>
+<span class="cc-eyebrow">BODY FAT</span>
+<span class="cc-mark">?</span>
+</div>
+
+<figure class="const-card" id="const-scale-body">
+<img src="images/omvi-body-scale-product-front-01.jpg" alt="OMVI body composition scale">
+</figure>
+
+<figure class="const-card" id="const-scale-kitchen">
+<img src="images/omvi-kitchen-scale-product-front-01.jpg" alt="OMVI smart kitchen scale">
+</figure>
+
+<figure class="const-phone" id="const-phone-back">
+<img src="images/omvi-app-nutrition-goals-gain-muscle.jpg" alt="OMVI app nutrition goal selection screen">
+</figure>
+<figure class="const-phone" id="const-phone-front">
+<img src="images/omvi-app-daily-calorie-target-dashboard.jpg" alt="OMVI app daily calorie target dashboard">
+</figure>
+
+<div class="product-tag" id="tag-body">
+<span class="tag-title">OMVI Body Scale</span>
+<span class="tag-sub">50+ body metrics</span>
+</div>
+<div class="product-tag" id="tag-kitchen">
+<span class="tag-title">OMVI Nutrition Scale</span>
+<span class="tag-sub">&plusmn;0.1g precision</span>
+</div>
+
+<div class="hero-headline" id="hero-headline">
+<h1 class="hl" id="hl-chaos">Numbers without context<em>mean nothing.</em></h1>
+<p class="hl" id="hl-resolved">Know your body.<em>Finally.</em></p>
+</div>
+
+<div class="hero-insight" id="hero-insight">
+<div class="insight-stats">
+<div class="insight-stat"><span class="insight-value">77.8<small>kg</small></span><span class="insight-label">Body Weight</span></div>
+<div class="insight-sep"></div>
+<div class="insight-stat"><span class="insight-value">41.5<small>g</small></span><span class="insight-label">Portion Logged</span></div>
+<div class="insight-sep"></div>
+<div class="insight-stat"><span class="insight-value">3,600<small>kcal</small></span><span class="insight-label">Daily Target</span></div>
+</div>
+<p class="insight-sentence">Weigh in, log a meal, and your calorie target updates automatically.</p>
+</div>
+
+<a href="shop.html" class="btn btn-primary hero-cta" id="hero-cta">Shop OMVI &rarr;</a>
+
+</div>
+</div>
+</section>
+
+<section class="sku-section" id="shop">
+<div class="section-heading">
+<h2>The OMVI Health System</h2>
+<p>Three ways to know your body better — choose one device, or get the complete connected system.</p>
+</div>
+<div class="sku-grid">
+
+<article class="sku-card">
+<span class="sku-badge">Body Composition</span>
+<img src="images/omvi-body-scale-product-front-01.jpg" alt="OMVI Body Composition Scale">
+<h3>OMVI Body Composition Scale</h3>
+<p>Weight, body fat, skeletal muscle and 50+ body metrics in one weigh-in.</p>
+<div class="sku-price">
+<span class="price-now">$199.99</span>
+</div>
+<a href="bodyscale.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+<article class="sku-card sku-card-featured">
+<span class="sku-badge sku-badge-gold">Best Value</span>
+<img src="images/omvi-combo-system-front-01.jpg" alt="OMVI Health System — Body Composition Scale and Smart Nutrition Scale">
+<h3>OMVI Health System</h3>
+<p>Both scales together — body composition and nutrition data in one connected system.</p>
+<div class="sku-price">
+<span class="price-now">$249.99</span>
+<span class="price-was">$299.98</span>
+<span class="price-save">Save $49.99</span>
+</div>
+<a href="system.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+<article class="sku-card">
+<span class="sku-badge">Smart Nutrition</span>
+<img src="images/omvi-kitchen-scale-product-front-01.jpg" alt="OMVI Smart Nutrition Scale">
+<h3>OMVI Smart Nutrition Scale</h3>
+<p>Select your food, weigh it, and send calories and macros straight to your meal.</p>
+<div class="sku-price">
+<span class="price-now">$99.99</span>
+</div>
+<a href="nutritionscale.html" class="btn btn-primary sku-cta">View Product &rarr;</a>
+</article>
+
+</div>
+</section>
+
+<section class="features-section">
+<div class="section-heading">
+<h2>One Ecosystem, Every Metric</h2>
+</div>
+
+<article class="feature-row">
+<div class="feature-media">
+<img src="images/omvi-body-scale-in-use-weight-02.jpg" alt="Person standing on the OMVI body scale showing a live weight reading">
+</div>
+<div class="feature-copy">
+<h3>Body Composition Tracking</h3>
+<p>Step on and get an instant read on weight, body fat and goal progress. Every weigh-in syncs straight to the OMVI app, so trends over weeks and months are always one tap away.</p>
+</div>
+</article>
+
+<article class="feature-row reverse">
+<div class="feature-media">
+<img src="images/omvi-kitchen-scale-in-use-food-metrics-01.jpg" alt="OMVI kitchen scale weighing food and showing calories and fat">
+</div>
+<div class="feature-copy">
+<h3>Smart Nutrition Tracking</h3>
+<p>Place any ingredient on the kitchen scale and watch calories, fat and macros calculate in real time. No more guessing portion sizes — just accurate, effortless food logging.</p>
+</div>
+</article>
+
+<article class="feature-row" id="app">
+<div class="feature-media app-media">
+<img src="images/omvi-app-daily-calorie-target-dashboard.jpg" alt="OMVI app daily calorie target dashboard">
+<img src="images/omvi-app-nutrition-goals-gain-muscle.jpg" alt="OMVI app nutrition goal selection screen">
+</div>
+<div class="feature-copy">
+<h3>Connected Health Intelligence</h3>
+<p>Your daily calorie target recalculates automatically after every weigh-in. Set a goal — maintain, lose or build muscle — and the OMVI app keeps your numbers current without the manual math.</p>
+</div>
+</article>
+
+</section>
+
+<section class="story-section" id="story">
+<div class="story-media">
+<img src="images/omvi-founders-together-01.jpg" alt="OMVI founders together">
+</div>
+<div class="story-copy">
+<h2>Our Story</h2>
+<p>OMVI was built by people who were tired of guessing. Between crash diets, inconsistent bathroom scales and food logs that never quite added up, we set out to build hardware and software that finally speak the same language.</p>
+<p>Every OMVI product is designed, tested and refined by our own team — so what you hold in your hands is exactly what we use ourselves, every day.</p>
+<a href="ourstory.html" class="link-arrow">Read Our Story &rarr;</a>
+</div>
+</section>
+
+<section class="reviews-section">
+<div class="section-heading">
+<h2>What Our Customers Say</h2>
+<div class="hero-trust centered">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<span>4.9 out of 5 &middot; 500+ verified reviews</span>
+</div>
+</div>
+<div class="reviews-grid">
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<h3>Genuinely the best scale I've owned.</h3>
+<p>The body composition tracking is impressive. I can see changes week to week that I never would have noticed otherwise. Easy to set up too.</p>
+<div class="review-meta"><span>Sarah M. &mdash; Gold Coast</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<h3>Finally accurate portion control.</h3>
+<p>I've tried three other smart kitchen scales and this is the only one where the calorie numbers actually match what I expect. The app sync is instant.</p>
+<div class="review-meta"><span>Daniel R. &mdash; Auckland</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+<h3>Great hardware, better app.</h3>
+<p>The scale itself feels premium, but what sold me was the daily calorie target updating automatically after every weigh-in. Small thing that makes a big difference.</p>
+<div class="review-meta"><span>Priya K. &mdash; Wellington</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<h3>Bought one, then bought two more for the family.</h3>
+<p>Set up profiles for everyone in the house and it tracks us all separately without any mix-ups. Shipping to Australia was faster than expected too.</p>
+<div class="review-meta"><span>Michael T. &mdash; Brisbane</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+<h3>Exactly what my nutrition plan needed.</h3>
+<p>Weighing meals used to be a chore. Now I get instant feedback on macros as I cook, and it's changed how consistent I am with hitting my targets.</p>
+<div class="review-meta"><span>Ella W. &mdash; Christchurch</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+<article class="review-card">
+<span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+<h3>Sleek design, simple to use.</h3>
+<p>Wasn't sure I needed a "smart" kitchen scale but the interface is dead simple and it looks great sitting on the bench. Would recommend to anyone starting out.</p>
+<div class="review-meta"><span>Josh P. &mdash; Sydney</span><span class="verified">&check; Verified purchase</span></div>
+</article>
+
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="footer-top">
+<div class="footer-tagline">
+<h2>Know your Body.</h2>
+<p>Body Composition Insights, Food Intake. All directly to you.</p>
+</div>
+<form class="subscribe-form" action="#" method="post">
+<label for="footer-email" class="sr-only">Email address</label>
+<input id="footer-email" type="email" name="email" placeholder="your@email.com" required>
+<button type="submit">Subscribe &rarr;</button>
+</form>
+</div>
+
+<div class="footer-columns">
+<div class="footer-brand">
+<span class="logo"><img src="images/omvi-logo.svg" alt="OMVI"></span>
+<ul class="social-links">
+<li><a href="#" aria-label="Instagram">Instagram</a></li>
+<li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+<li><a href="#" aria-label="X">X</a></li>
+</ul>
+</div>
+
+<nav class="footer-nav">
+<h3>Product</h3>
+<ul>
+<li><a href="bodyscale.html">Body Composition Scale</a></li>
+<li><a href="nutritionscale.html">Smart Nutrition Scale</a></li>
+<li><a href="system.html">OMVI Health System</a></li>
+<li><a href="app.html">OMVI App</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Company</h3>
+<ul>
+<li><a href="ourstory.html">About</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Press</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Science</h3>
+<ul>
+<li><a href="app.html">How it Works</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Accuracy</a></li>
+</ul>
+</nav>
+
+<nav class="footer-nav">
+<h3>Support</h3>
+<ul>
+<li><a href="help.html">Help Center</a></li>
+<li><a href="help.html#contact">Contact Us</a></li>
+<li><a href="help.html#warranty">Warranty</a></li>
+<li><a href="help.html#returns">Returns</a></li>
+<li><a href="help.html#certification">Certification</a></li>
+</ul>
+</nav>
+</div>
+
+<div class="footer-bottom">
+<p>&copy; 2026 OMVI Health. All Rights Reserved.</p>
+</div>
+</footer>
+
+
+<script>
+(function () {
+    var shell = document.getElementById('hero-shell');
+    var canvas = document.getElementById('hero-canvas');
+    if (!shell || !canvas) { return; }
+
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+    function lerp(a, b, t) { return a + (b - a) * t; }
+    function smooth(t) { return t * t * (3 - 2 * t); }
+    function phase(p, a, b) { return smooth(clamp((p - a) / (b - a), 0, 1)); }
+
+    var scaleBody = document.getElementById('const-scale-body');
+    var scaleKitchen = document.getElementById('const-scale-kitchen');
+    var phoneBack = document.getElementById('const-phone-back');
+    var phoneFront = document.getElementById('const-phone-front');
+    var svg = document.getElementById('hero-lines');
+    var lineBody = document.getElementById('line-body');
+    var lineKitchen = document.getElementById('line-kitchen');
+    var tagBody = document.getElementById('tag-body');
+    var tagKitchen = document.getElementById('tag-kitchen');
+    var hlChaos = document.getElementById('hl-chaos');
+    var hlResolved = document.getElementById('hl-resolved');
+    var insight = document.getElementById('hero-insight');
+    var cta = document.getElementById('hero-cta');
+
+    /* Each floating card gets its own drift frequency and tilt so the
+       pre-scroll state reads as scattered noise rather than a grid. */
+    var cards = Array.prototype.slice.call(canvas.querySelectorAll('[data-chaos]'))
+        .map(function (el, i) {
+            return {
+                el: el,
+                rot: [-9, 6, -5, -7, 4, -4, 7, -6, 5][i % 9],
+                fx: 0.10 + (i % 4) * 0.02,
+                fy: 0.09 + (i % 3) * 0.03,
+                px: i * 0.9,
+                py: i * 1.4
+            };
+        });
+
+    /* Scatter rings the headline; some cards deliberately tuck behind it. */
+    var scatterLandscape = [
+        [0.11, 0.20], [0.64, 0.11], [0.87, 0.22],
+        [0.08, 0.52], [0.31, 0.57], [0.71, 0.66],
+        [0.92, 0.55], [0.19, 0.83], [0.55, 0.88]
+    ];
+    var scatterPortrait = [
+        [0.23, 0.27], [0.74, 0.24], [0.80, 0.41],
+        [0.19, 0.45], [0.42, 0.57], [0.24, 0.73],
+        [0.80, 0.72], [0.34, 0.88], [0.72, 0.87]
+    ];
+
+    function layout(W, H) {
+        if (H >= W) {
+            return {
+                body:    { to: [0.25, 0.37], from: [-0.40, -0.20], rot: [-26, -3] },
+                kitchen: { to: [0.75, 0.37], from: [ 1.40, -0.16], rot: [ 24,  3] },
+                phone:   { to: [0.50, 0.64], from: [ 0.50,  1.50], rot: [ 18,  0] },
+                gap: 12,
+                edgeTags: true,
+                scatter: scatterPortrait
+            };
+        }
+        return {
+            body:    { to: [0.15, 0.56], from: [-0.35, 0.10], rot: [-28, -6] },
+            kitchen: { to: [0.85, 0.56], from: [ 1.35, 0.78], rot: [ 26,  5] },
+            phone:   { to: [0.50, 0.58], from: [ 0.50, 1.45], rot: [ 16,  0] },
+            gap: 18,
+            scatter: scatterLandscape
+        };
+    }
+
+    function progress() {
+        var total = shell.offsetHeight - window.innerHeight;
+        if (total <= 0) { return 1; }
+        return clamp(-shell.getBoundingClientRect().top / total, 0, 1);
+    }
+
+    function put(node, x, y, rot, sc, op) {
+        if (!node) { return; }
+        node.style.left = x + 'px';
+        node.style.top = y + 'px';
+        node.style.transform = 'translate(-50%,-50%) rotate(' + rot + 'deg) scale(' + sc + ')';
+        if (op !== undefined) { node.style.opacity = op; }
+    }
+
+    /* Trims both ends so the connector sits in the gap between the product
+       and the phone instead of running underneath them. */
+    function arrow(line, from, to, cutA, cutB, op) {
+        if (!line) { return; }
+        var dx = to.x - from.x, dy = to.y - from.y;
+        var len = Math.sqrt(dx * dx + dy * dy) || 1;
+        var ux = dx / len, uy = dy / len;
+        line.setAttribute('x1', from.x + ux * cutA);
+        line.setAttribute('y1', from.y + uy * cutA);
+        line.setAttribute('x2', to.x - ux * cutB);
+        line.setAttribute('y2', to.y - uy * cutB);
+        line.style.opacity = op;
+    }
+
+    function badge(node, x, y, op) {
+        if (!node) { return; }
+        node.style.left = x + 'px';
+        node.style.top = y + 'px';
+        node.style.transform = 'translate(-50%,-50%) translateY(' + lerp(8, 0, op) + 'px)';
+        node.style.opacity = op;
+    }
+
+    function draw(time) {
+        var W = canvas.offsetWidth;
+        var H = canvas.offsetHeight;
+        if (!W || !H) { return; }
+
+        var p = progress();
+        var L = layout(W, H);
+        var t = (time || 0) / 1000;
+
+        var pChaos    = reduce ? 1 : phase(p, 0.00, 0.30);
+        var pHead     = reduce ? 1 : phase(p, 0.18, 0.44);
+        var pProducts = reduce ? 1 : phase(p, 0.28, 0.58);
+        var pPhone    = reduce ? 1 : phase(p, 0.44, 0.70);
+        var pLinks    = reduce ? 1 : phase(p, 0.60, 0.78);
+        var pInsight  = reduce ? 1 : phase(p, 0.70, 0.88);
+
+        var bodyPt    = { x: L.body.to[0] * W,    y: L.body.to[1] * H };
+        var kitchenPt = { x: L.kitchen.to[0] * W, y: L.kitchen.to[1] * H };
+        var phonePt   = { x: L.phone.to[0] * W,   y: L.phone.to[1] * H };
+
+        /* 1 - the scattered questions drift, then collapse toward the middle
+           and fade as the real products take their place. */
+        cards.forEach(function (c, i) {
+            var s = L.scatter[i % L.scatter.length];
+            var drift = reduce ? 0 : (1 - pChaos);
+            var dx = Math.sin(t * c.fx + c.px) * 12 * drift;
+            var dy = Math.cos(t * c.fy + c.py) * 12 * drift;
+            put(c.el,
+                lerp(s[0] * W + dx, W * 0.5, pChaos),
+                lerp(s[1] * H + dy, H * 0.5, pChaos),
+                lerp(c.rot, 0, pChaos),
+                lerp(1, 0.55, pChaos),
+                clamp(1 - pChaos * 1.3, 0, 1));
+        });
+
+        /* 2 - the headline swaps from the problem to the promise. */
+        if (hlChaos) {
+            hlChaos.style.opacity = 1 - pHead;
+            hlChaos.style.transform = 'translateY(-50%) translateY(' + lerp(0, -14, pHead) + 'px)';
+        }
+        if (hlResolved) {
+            hlResolved.style.opacity = pHead;
+            hlResolved.style.transform = 'translateY(-50%) translateY(' + lerp(14, 0, pHead) + 'px)';
+        }
+
+        /* 3 - both scales fly in from off-screen. */
+        put(scaleBody,
+            lerp(L.body.from[0], L.body.to[0], pProducts) * W,
+            lerp(L.body.from[1], L.body.to[1], pProducts) * H,
+            lerp(L.body.rot[0], L.body.rot[1], pProducts),
+            lerp(0.86, 1, pProducts));
+        put(scaleKitchen,
+            lerp(L.kitchen.from[0], L.kitchen.to[0], pProducts) * W,
+            lerp(L.kitchen.from[1], L.kitchen.to[1], pProducts) * H,
+            lerp(L.kitchen.rot[0], L.kitchen.rot[1], pProducts),
+            lerp(0.86, 1, pProducts));
+
+        /* 4 - the app rises into the middle. */
+        var phX = lerp(L.phone.from[0], L.phone.to[0], pPhone) * W;
+        var phY = lerp(L.phone.from[1], L.phone.to[1], pPhone) * H;
+        var phRot = lerp(L.phone.rot[0], L.phone.rot[1], pPhone);
+        var phSc = lerp(0.82, 1, pPhone);
+        put(phoneBack, phX - W * 0.035, phY - H * 0.012, phRot + 9, phSc * 0.97, pPhone * 0.9);
+        put(phoneFront, phX, phY, phRot, phSc, pPhone);
+
+        /* 5 - connectors from each scale into the app, plus the name cards. */
+        if (svg) { svg.setAttribute('viewBox', '0 0 ' + W + ' ' + H); }
+        var cardCut = (scaleBody ? scaleBody.offsetWidth : 0) / 2 + 12;
+        var phoneCut = (phoneFront ? phoneFront.offsetWidth : 0) / 2 + 16;
+        arrow(lineBody, bodyPt, phonePt, cardCut, phoneCut, pLinks);
+        arrow(lineKitchen, kitchenPt, phonePt, cardCut, phoneCut, pLinks);
+
+        /* tagHalf keeps L.gap a true edge-to-edge gap, since a tag is centred
+           on whatever point it is handed. */
+        var cardHalf = (scaleBody ? scaleBody.offsetHeight : 0) / 2;
+        var tagHalf = (tagBody ? tagBody.offsetHeight : 0) / 2;
+        var cardHalfW = (scaleBody ? scaleBody.offsetWidth : 0) / 2;
+        var tagBodyX = bodyPt.x;
+        var tagKitchenX = kitchenPt.x;
+        if (L.edgeTags) {
+            tagBodyX = bodyPt.x - cardHalfW + (tagBody ? tagBody.offsetWidth : 0) / 2;
+            tagKitchenX = kitchenPt.x + cardHalfW - (tagKitchen ? tagKitchen.offsetWidth : 0) / 2;
+        }
+        badge(tagBody, tagBodyX, bodyPt.y + cardHalf + L.gap + tagHalf, pLinks);
+        badge(tagKitchen, tagKitchenX, kitchenPt.y + cardHalf + L.gap + tagHalf, pLinks);
+
+        /* 6 - the combined result and the call to action. */
+        if (insight) {
+            insight.style.opacity = pInsight;
+            insight.style.transform = 'translate(-50%,-50%) translateY(' + lerp(14, 0, pInsight) + 'px)';
+        }
+        if (cta) {
+            cta.style.opacity = pInsight;
+            cta.style.transform = 'translate(-50%,-50%) translateY(' + lerp(14, 0, pInsight) + 'px)';
+            cta.style.pointerEvents = pInsight > 0.5 ? 'auto' : 'none';
+        }
+    }
+
+    function loop(time) {
+        draw(time);
+        window.requestAnimationFrame(loop);
+    }
+
+    /* Scroll and resize drive the layout directly, so the hero keeps tracking
+       the scroll position even if animation frames are throttled. The rAF
+       loop on top of that only supplies the idle drift of the cards. */
+    window.addEventListener('scroll', function () { draw(); }, { passive: true });
+    window.addEventListener('resize', function () { draw(); });
+    window.addEventListener('load', function () { draw(); });
+    draw();
+    window.requestAnimationFrame(loop);
+})();
+</script>
+
+<script>
+(function () {
+    var toggle = document.getElementById('nav-toggle');
+    var nav = document.querySelector('.primary-navigation');
+    if (!toggle || !nav) { return; }
+
+    toggle.addEventListener('click', function () {
+        var isOpen = nav.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+})();
+</script>
+
+</body>
+</html>
